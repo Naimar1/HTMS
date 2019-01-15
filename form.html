@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
   <body>
-        <h2>Patient's form</h2>
-        <form action="/action_page.php">
-            First name:<br>
-            <input type="text" name="firstname" value=""><br>
-            Last name:<br>
-            <input type="text" name="lastname" value=""><br>
-            contact:<br>
-            <input type="text" name="contact" value=""><br>
-            Residence:<br>
-            <input type="text" name="Residence" value=""><br>
-            illness:<br>
-            <input type="text" name="illness" value=""><br>
-            insurance:<br>
-            <input type="text" name="insurance" value=""><br><br>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="container">
+           <div class="jumbotron">
+             <div class="well">
+               <h1>Patient's form</h1>
+             </div>
+               <div class="panel panel-default">
+               <div class="panel-body">
+                 <form action="/action_page.php">
+                   First name:<br>
+                   <input type="text" name="firstname" value=""><br>
+                   Last name:<br>
+                   <input type="text" name="lastname" value=""><br>
+                   contact:<br>
+                   <input type="text" name="contact" value=""><br>
+                   Residence:<br>
+                   <input type="text" name="Residence" value=""><br>
+                   illness:<br>
+                   <input type="text" name="illness" value=""><br>
+                   insurance:<br>
+                   <input type="text" name="insurance" value=""><br><br>
+                   <input type="submit" class="btn btn-primary" value="Submit">
+                  </form>
+                </div>
+              </div>
+             
+           </div>
+        </div>
         
-  </body>
+   </body>
 </html>
