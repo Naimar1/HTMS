@@ -1,0 +1,83 @@
+/*CSS  for index.html*/
+
+.footer{
+  margin-top:1000px;
+  padding-top:10px;
+  width: auto;
+  margin-right:500px;
+  margin-left:100px;
+  margin-bottom:10px;
+  background: brown;
+  height:30px;
+  text-align:center;
+  float:right;
+
+}
+.image {
+  background-image: url(https://www.pih.org/sites/default/files/styles/flexslider_full/public/2018-07/Rwanda_0916_PediatricOnc-Patrick_CAvila_028-web.jpg?itok=Jz2Gg8C4); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.image1 {
+  width: 1000px !important;
+  margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+/* css for form.html  */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  
+}
+img {
+  position: static;
+  float:none;
+}
+.jumbotron{
+    background-color: bisque;
+    
+}
+.well{
+    background-color: darkcyan;
+    color: azure;
+    text-align: center;
+}
+.thead-dark {
+  color: darkcyan;
+  font-family: monospace;
+  font-size: 20px;
+
+}
+
