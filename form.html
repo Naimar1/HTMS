@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" ></script>
+     <script src="firebase.js"></script>
+       
+
 </head>
   <body>
         <div class="container">
@@ -16,26 +21,51 @@
              </div>
                <div class="panel panel-default">
                <div class="panel-body">
-                 <form action="/action_page.php">
+                 <form  class="info" id="ff">  
                    <strong>First name:</strong><br>
-                   <input type ="text" name ="firstname" value =""><br>
+                   <input type ="text" name ="firstname" value ="" id="name1"><br>
                    <strong>Last name:</strong><br>
-                   <input type ="text" name ="lastname" value =""><br>
+                   <input type ="text" name ="lastname"  value ="" id="name2"><br>
                    <strong>contact:</strong><br>
-                   <input type ="text" name ="contact" value =""><br>
+                   <input type ="text" name ="contact"  value ="" id="name3"><br>
                    <strong>Residence:</strong><br>
-                   <input type ="text" name ="Residence" value =""><br>
+                   <input type ="text" name ="Residence" value ="" id="name4"><br>
                    <strong>Illness:</strong><br>
-                   <input type ="text" name ="illness" value =""><br>
+                   <input type ="text" name ="illness"  value ="" id="name5"><br>
                    <strong>Insurance:</strong><br>
-                   <input type ="text" name ="insurance" value =""><br><br>
+                   <input type ="text" name ="insurance" value ="" id="name6"><br><br>
                    <input type ="submit" class ="btn btn-primary" value ="Submit">
                   </form>
                 </div>
-              </div>
+                </div>
              
            </div>
+             <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                     <th scope="col">First name</th>
+                     <th scope="col">Last name</th>
+                     <th scope="col">Contact</th>
+                     <th scope="col">Residence</th>
+                     <th scope="col">Illness</th>
+                     <th scope="col">Insurance</th>
+                    
+
+
+                  </tr>
+                </thead>
+                <tbody id="datas">
+    
+             </table>
+
+            <button onclick="myFunction()">Send to</button>
+            <script>
+                 function myFunction() {
+                  alert("This is Patient transfer !");
+                  window.location.href="receiver.html";
+                }
+            </script>
         </div>
-        
+       
    </body>
 </html>

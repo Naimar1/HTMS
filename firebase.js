@@ -1,28 +1,28 @@
 // Initialize Firebase
+// Initialize Firebase
 var config = {
-    apiKey: "AIzaSyBQ2No5A5yeunX8gint5ozs9N-qiEFmLts",
-    authDomain: "projectone-4718c.firebaseapp.com",
-    databaseURL: "https://projectone-4718c.firebaseio.com",
-    projectId: "projectone-4718c",
-    storageBucket: "projectone-4718c.appspot.com",
-    messagingSenderId: "711272143427"
-  };
-  firebase.initializeApp(config);
+  apiKey: "AIzaSyCz7594CqvuGqWu8wX8sfWaEd7-VWN-uZ4",
+  authDomain: "project-93818.firebaseapp.com",
+  databaseURL: "https://project-93818.firebaseio.com",
+  projectId: "project-93818",
+  storageBucket: "",
+  messagingSenderId: "245331569122"
+};
+firebase.initializeApp(config);
   var database = firebase.database();
   var d = new Date();
   var t =d.getTime();
   var count= t;
 
  $(document).ready(function(){
-   $("form").submit(function(e){
+   $("form#ff").submit(function(e){
        var fname =$('input#name1').val()
        var lname =$('input#name2').val()
        var contact =$('input#name3').val()
        var residence =$('input#name4').val()
        var illness =$('input#name5').val()
        var insurance =$('input#name6').val()
-       var transferFrom =$('input#name7').val()
-       var transferTo =$('input#name8').val()
+      
 
 
        count += 1;
@@ -33,10 +33,19 @@ var config = {
            Res:residence,
            Ill:illness,
            Insu:insurance,
-           TransfF:transferFrom,
-           TransfT:transferTo
+           
        }
-       firebase.database().ref().child("details/"+count).push(data);
+       console.log(data)
+     
+       try {
+        firebase.database().ref().child("details/"+count).push(data);
+      }
+      catch (err){
+        console.log(err)
+            }
+        e.preventDefault()
+       
+      
     
   
        
@@ -51,9 +60,7 @@ var config = {
             <th scope="row">${childData.Cont}</th>
             <th scope="row">${childData.Res}</th>
             <th scope="row">${childData.Ill}</th>
-            <th scope="row">${childData.Insu}</th>
-            <th scope="row">${childData.TransfF}</th>
-            <th scope="row">${childData.TransfT}</th></tr>`)
+            <th scope="row">${childData.Insu}</th></tr>`)
   })
         })
 
